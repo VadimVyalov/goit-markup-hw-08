@@ -1,0 +1,66 @@
+/*
+  |============================
+  | Global styles
+  |============================
+*/
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  background-color: $main-white-color;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.1786;
+  text-align: center;
+  color: $heading-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
+.container {
+  max-width: 480px;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+  pointer-events: none;
+}

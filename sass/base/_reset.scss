@@ -1,0 +1,29 @@
+/*
+  |============================
+  | Global reset
+  |============================
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 17px;
+}

@@ -1,0 +1,72 @@
+$decoration-color: #2196f3; //* частини тексту, кнопки*/
+$card-image-hover: #2196f3e6; //* колір випадаючего тексту */
+$heading-text-color: #212121; //* Текст заголовка */
+$modal-border-color: #21212133; //* Текст бордер инпута в модальному */
+$main-text-color: #757575; //* Текст */
+$placeholder-color: #75757580; //* Текст підказка*/
+$main-white-color: #ffffff; //* просто білий колір */
+$black-color: #000000; //* просто чорний колір */
+$fotter-background-color: #2f303a; //*колір футера*/
+$contact-link-color: rgba(255, 255, 255, 0.6); //*контакти в футері*/
+$subscription-border-color: rgba(255, 255, 255, 0.3);
+$social-link-color: rgba(255, 255, 255, 0.1); //* соц мережі в футері*/
+$button-border-color: rgba(0, 0, 0, 0.1); //* колір бордера кнопки в модал*/
+$overlay-color: rgba(0, 0, 0, 0.2); //* колір під модальним вікном*/
+$button-main-color: #188ce8; //* кнопка на головній */
+$button-filter-color: #f5f4fa; //* кнопки в портфоліо */
+$header-bottom-border: #ececec; //* Нижній бордюр хедера */
+$banner-bg-color: #c4c4c4; //*Фон під банером*/
+$card-border: #eee; //* Рамка картки*/
+$secondary-background-color: #f5f4fa; //* Допоміжний колір фону*/
+$client-color: #afb1b8; //* Постійні клієнти*/
+$work-title-color: #2F303Acd; //* Текст заголовка на картинках */
+
+// $cards-gap: 30px;           //* Відступ у картках портфоліо */
+// $features-gap: 30px;        //* Відступ у картках особливості */
+// $work-gap: 30px;            //* Відступ у картках робот */
+// $team-gap: 30px;            //* Відступ у картках команди */
+// $client-gap: 30px;          //* Відступ у картках клієнти */
+
+// $cards-count: 3;            //* Карток в лінії портфоліо */
+// $features-count: 4;         //* Карток в лінії особливості */
+// $work-count: 3;             //* Карток в лінії робот */
+// $team-count: 4;             //* Карток в лінії команди */
+// $client-count: 6;           //* Карток в лінії клієнти */
+
+$time-hover: 250ms; //* Час эфектів ховера */
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+
+    --cards-gap: 30px; //* Відступ у картках портфоліо */
+    --features-gap: 30px; //* Відступ у картках особливості */
+    --work-gap: 30px; //* Відступ у картках робот */
+    --team-gap: 30px; //* Відступ у картках команди */
+    --client-gap: 30px; //* Відступ у картках клієнти */
+
+    --cards-count: 1; //* Карток в лінії портфоліо */
+    --features-count: 1; //* Карток в лінії особливості */
+    --work-count: 0; //* Карток в лінії робот */
+    --team-count: 1; //* Карток в лінії команди */
+    --client-count: 2; //* Карток в лінії клієнти */
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --cards-count: 2;
+        --features-count: 2;
+        --work-count: 0;
+        --team-count: 2;
+        --client-count: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --cards-count: 3;
+        --features-count: 4;
+        --work-count: 3;
+        --team-count: 4;
+        --client-count: 6;
+    }
+}

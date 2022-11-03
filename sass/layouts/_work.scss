@@ -1,0 +1,37 @@
+/*
+  |============================
+  | Work section
+  |============================
+*/
+.work {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.work__list {
+    list-style: none;
+
+    @include grid(var(--work-gap), var(--work-count));
+
+}
+
+.work__card {
+    position: relative;
+}
+
+.work__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $work-title-color;
+    color: $main-white-color;
+}

@@ -1,0 +1,35 @@
+/*
+  |============================
+  | Client section
+  |============================
+*/
+
+.client__list {
+    list-style: none;
+    line-height: 1.15;
+    text-align: center;
+
+    @include grid(var(--client-gap),var(--client-count));
+}
+
+.client__link {
+    display: block;
+    font-size: 0;
+    transition: color $time-hover $timing-function;
+    color: $client-color;
+
+    &:hover,
+    &:focus {
+        border-color: $decoration-color;
+        color: $decoration-color;
+    }
+}
+
+.client__icon {
+    width: 100%;
+    padding: 16px 0;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: currentColor;
+    fill: currentColor;
+}

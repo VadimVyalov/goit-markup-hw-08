@@ -1,0 +1,90 @@
+ /*
+  |============================
+  |  All buttons
+  |============================
+*/
+
+.banner__btn {
+  @extend %btn;
+  
+  padding: 10px 32px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $main-white-color;
+  background-color: $button-main-color;
+  transition-property: background-color;
+}
+
+.filter__btn {
+  @extend %btn;
+
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $heading-text-color;
+  background-color: $button-filter-color;
+  transition-property: background-color, color, box-shadow;
+    &:hover,
+    &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.subscription__btn {
+  @extend %btn;
+
+  display: block;
+  position: relative;
+  padding: 10px 62px 10px 32px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $main-white-color;
+  background-color: $button-main-color;
+  transition-property: background-color;
+}
+
+.modal-form__btn {
+  @extend %btn;
+
+  display: block;
+  padding: 10px 52px;
+  margin: 30px auto 0;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $main-white-color;
+  background-color: $button-main-color;
+  transition-property: background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  line-height: 0.5;
+  padding: 5px;
+  color: $black-color;
+  background-color: $main-white-color;
+  border: 1px solid $button-border-color;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color $time-hover $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $decoration-color;
+  }
+
+  &__icon {
+  fill: currentColor;
+  }
+}
+
