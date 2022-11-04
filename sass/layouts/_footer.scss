@@ -6,6 +6,7 @@
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: $min-width-viewport;
 
   background-color: $fotter-background-color;
 }

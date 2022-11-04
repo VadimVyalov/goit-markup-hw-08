@@ -10,11 +10,13 @@ body {
   letter-spacing: 0.03em;
   color: $main-text-color;
   background-color: $main-white-color;
+
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: $min-width-viewport;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -37,7 +39,7 @@ body {
 
 .container {
   max-width: 480px;
-  min-width: 320px;
+  min-width: $min-width-viewport;
   padding: 0 15px;
   margin: 0 auto;
 

@@ -60,6 +60,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 340px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -84,7 +85,7 @@ body {
 
 .container {
   max-width: 480px;
-  min-width: 320px;
+  min-width: 340px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -1194,6 +1195,7 @@ img {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 340px;
   background-color: #2f303a;
 }
 
@@ -1334,35 +1336,33 @@ img {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 1;
   width: 100vw;
+  min-width: 340px;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 40px 48px 40px;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 250ms linear 250ms;
-  transition: -webkit-transform 250ms linear 250ms;
-  transition: transform 250ms linear 250ms;
-  transition: transform 250ms linear 250ms, -webkit-transform 250ms linear 250ms;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
 }
 .mobile-menu.is-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .mobile-menu__list {
@@ -1435,25 +1435,41 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.mobile-menu__social--flex:not(:last-child) {
-  padding-right: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  background-color: inherit;
+  position: relative;
+  margin-left: -10px;
 }
 
-.mobile-menu__social-item:not(:last-child) {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.mobile-menu__social--flex::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 3px;
+  background-color: inherit;
+}
+
+.mobile-menu__social-item {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-menu__social-item:not(:first-child) {
   padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-menu__social-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
-  /* identical to box height, or 122% */
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
