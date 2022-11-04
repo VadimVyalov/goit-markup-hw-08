@@ -7,7 +7,7 @@
 .modal-overlay {
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
@@ -102,6 +102,7 @@
   &:focus {
     border-color: $decoration-color;
     outline: none;
+
     &+.modal-form__input-icon {
       fill: $decoration-color;
     }
@@ -110,6 +111,7 @@
   &:not(:placeholder-shown) {
     color: $heading-text-color;
   }
+
   &--comment {
     padding: 10px 16px;
     resize: none;
@@ -143,7 +145,7 @@
     border-radius: 2px;
     margin-right: 7px;
     transition: border-color $time-hover $timing-function;
-  }  
+  }
 }
 
 .modal-form__check {
@@ -153,7 +155,7 @@
 
   &:hover &-focus::before {
     border-color: $decoration-color;
-  }  
+  }
 }
 
 .modal-form__custom-check {
