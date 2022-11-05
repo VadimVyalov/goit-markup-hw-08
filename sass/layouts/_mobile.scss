@@ -34,24 +34,23 @@
     position: fixed;
     flex-direction: column;
     z-index: 1;
-    // width: 100vw;
+    width: 100vw;
     min-width: $min-width-viewport;
-    // height: 100vh;
     padding: 48px 40px 48px 40px;
 
     overflow-x: hidden;
 
     top: 0;
-    left: 0;
-    right: 0;
+    // left: 0;
+    left: 100vw;
     bottom: 0;
-    transform: translateX(-100%);
+    transform: translateX(0);
 
     transition: transform $time-hover $timing-function;
     background: $main-white-color;
 
     &.is-open {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
 

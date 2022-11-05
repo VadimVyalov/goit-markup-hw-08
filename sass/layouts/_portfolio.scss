@@ -37,7 +37,7 @@
 
 .cards__text {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -51,7 +51,7 @@
   align-items: center;
   overflow: hidden;
 
-  transform: translateY(100%);
+  // transform: translateY(100%);
   background-color: $card-image-hover;
 
   transition: transform $time-hover $timing-function;
@@ -70,7 +70,7 @@
     user-select: none;
 
     & .cards__text {
-      transform: translateY(0);
+      transform: translateY(-100%);
       overflow: auto;
     }
   }
