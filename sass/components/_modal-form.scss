@@ -35,8 +35,9 @@
 .modal-form {
   margin: auto;
   position: relative;
-
-  width: 450px;
+  width: calc(100vw - 30px);
+  min-width: 250px;
+  max-width: 450px;
   height: auto;
   padding: 40px;
 
@@ -49,6 +50,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-timing-function: $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 530px;
+  }
 }
 
 .modal-form__title {
