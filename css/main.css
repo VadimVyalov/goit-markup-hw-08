@@ -141,7 +141,11 @@ img {
 .no-scroll {
   height: 100vh;
   overflow-y: hidden;
-  padding-right: 17px;
+}
+@media screen and (min-width: 1200px) {
+  .no-scroll {
+    padding-right: 17px;
+  }
 }
 
 @-webkit-keyframes modalshow {
